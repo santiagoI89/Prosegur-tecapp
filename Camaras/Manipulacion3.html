@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosegur tecapp</title>
+    <link rel="stylesheet" href="../css/css.css?v1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script>
+        function redireccionar(valor) {
+            // Redirecciona a un formulario diferente basado en el valor del botón
+            if (valor === "1") {
+                window.location.href = "Manipulacion4.html"; // Reemplaza con la URL de tu primer formulario
+            } else if (valor === "2") {
+                window.location.href = "Manipulacion2.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "3") {
+                window.location.href = "Manipulacion8.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "4") {
+                window.location.href = "FallasVms.html"; // Reemplaza con la URL de tu segundo formulario
+            }
+            else if (valor === "5") {
+                window.location.href = "FallasEagle.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "6") {
+                window.location.href = "FallasVms.html"; // Reemplaza con la URL de tu segundo formulario
+            }
+        }
+    </script>
+</head>
+
+ <body class="fondos">
+ <div class="contenedor5">
+    <img id="miImagen" src="../imagenes/logo.png" alt="" width="180" height="60" class="imagen">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener la referencia a la imagen por su ID
+            var imagen = document.getElementById("miImagen");
+    
+            // Agregar un evento de click a la imagen
+            imagen.addEventListener("click", function() {
+                // Redirigir a otra vista cuando se haga clic en la imagen
+                window.location.href = "../paneles.html";            });
+        });
+    </script>  <h1 class="titulo">CAMARA MANAGER</h1>
+  <button class="boton-personalizado" type="button" onclick="history.back();">Volver</button>
+</div>
+ 
+<div class="paragraph-with-image">
+    <img src="../Imagenes/procedimiento.png" alt="">
+    <p><b>SEÑOR/A XXX PODRIA POR FAVOR DESCRIBIRME LA CAMARA COMO ES FISICAMENTE</p></b>
+</div>
+    <div class="paragraph-with-image">
+        <img src="../Imagenes/procedimiento.png" alt="">
+        <p><b>SELECCIONA EL TIPO DE CAMARA QUE TIENE EL CLIENTE</p></b>
+    </div> 
+        
+ 
+    <form>
+<div class="container mt-5">
+        <div class="row">
+            
+<div class="col-md-6">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">CAMARA CUBO</h5>
+            
+            <div class="paragraph-with-image">                      
+        </div>
+        <img src="../Imagenes/CamaraCubo.png" width="650px" height="350PX">  
+            <div class="form-check">
+                <br>
+                <button type="button" class="btn btn-primary" onclick="redireccionar('1')">Seleccionar</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">CAMARA PT</h5>
+            
+            <div class="paragraph-with-image">                      
+        </div>
+        <img src="../Imagenes/CamaraPt.png" width="650px" height="350PX">  
+            <div class="form-check">
+                <br>
+                <button type="button" class="btn btn-primary" onclick="redireccionar('3')">Seleccionar</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">CAMARA DOMO</h5>
+            
+            <div class="paragraph-with-image">
+                             
+                    </div>
+                    <img src="../Imagenes/CamaraDomo.png" width="650px" height="350PX">  
+            <!-- Utiliza "height="auto"" para mantener la proporción original de la imagen -->
+            <div class="form-check">
+                            <button type="button" class="btn btn-primary" onclick="redireccionar('2');">Seleccionar</button>
+                            
+                        </div>
+        </div>
+    </div>
+</div>
+</form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+M6m5i5IQr5mW5u4xj5Hf5R5x/K/5fG5f5t5E5u5Q5z5U5w5T5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ugOaSJZ3ZcW5M5J5og4HQpev4F5tu6Bk/F5v5v5u5q2O5n5E5e5L5W5B5f5r5f5t5u5z5U5w5T5" crossorigin="anonymous"></script>
+</body>
+
+</html>

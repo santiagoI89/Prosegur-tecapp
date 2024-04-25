@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosegur tecapp</title>
+    <link rel="stylesheet" href="../css/css.css?v1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script>
+        function redireccionar(valor) {
+            // Redirecciona a un formulario diferente basado en el valor del botón
+            if (valor === "1") {
+                window.location.href = "Observaciones.html"; // Reemplaza con la URL de tu primer formulario
+            } 
+        }
+    </script>
+
+
+</head>
+ <body class="fondos">
+ <div class="contenedor5">
+    <img id="miImagen" src="../imagenes/logo.png" alt="" width="180" height="60" class="imagen">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener la referencia a la imagen por su ID
+            var imagen = document.getElementById("miImagen");
+    
+            // Agregar un evento de click a la imagen
+            imagen.addEventListener("click", function() {
+                // Redirigir a otra vista cuando se haga clic en la imagen
+                window.location.href = "../paneles.html";
+            });
+        });
+    </script>  <h1 class="titulo">FALLO BATERIA</h1>
+  <button class="boton-personalizado" type="button" onclick="window.location.href='TrianguloParpadeo1.html'">Volver</button>
+
+</div>  
+ <div class="paragraph-with-image">
+        <img src="../imagenes/procedimiento.png" alt="">
+        <p><b>-INGRESA A MODO PRUEBAS EN MASTER MIND PARA PODER ABRIR EL DISPOSITIVO Y HACER EL CAMBIO DE BATERIAS</p></b>
+    </div> 
+    <div class="paragraph-with-image">
+        <img src="../imagenes/asesor.png" alt="">
+        <p><b>-ESTA ES LA REFERENCIA DE LAS BATERIAS DEL DISPOSITIVO XXXXX PARA PROCEDER CON EL CAMBIO</p></b>
+    </div> 
+    <div class="paragraph-with-image">
+        <img src="../imagenes/asesor.png" alt="">
+        <p><b>-¿LE ES POSIBLE CONSEGUIR LA REFERENCIA DE BATERIAS?</p></b>
+    </div> 
+   <style>
+    /* Estilos para la sección // Estilos para la sección */
+    /* Estilos para la sección del acordeón */
+section {
+    width: 250px;
+    padding: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Alinea la sección al inicio en lugar de al final */
+    align-self: flex-start;
+    position: absolute; 
+    /* right: 0; (puedes eliminar esta propiedad si no la necesitas) */
+    z-index: 1; /* Asegura que la sección esté por encima del contenido existente */
+    margin-bottom: 20px; /* Agrega margen inferior para separar el acordeón del contenido debajo */
+}
+
+summary {
+    background: black;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenido debajo del acordeón */
+.content-below {
+    margin-top: 200px; /* Agrega margen superior para empujar el contenido más abajo */
+}
+
+    </style>
+   
+
+    
+
+<form>
+    
+<div class="container mt-5">
+        <div class="row">
+        <div class="col-md-6">
+        <br><br><br><br>
+                <div class="card mb-3 ">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">SI</h5>
+                        <div class="paragraph-with-image">
+                        <img src="../imagenes/asesor.png" alt="">
+                        <p>-DESTAPA EL DISPOSITIVO PARA HACER EL CAMBIO , QUITALE LAS PILAS E INTRODUCE LAS NUEVAS PILAS PARA EL CAMBIO,POR FAVOR ACERCATE AL TECLADO DEL SISTEMA DE ALARMA Y PRESIONA <b>LA TECLA (<span class="resaltado">*</span>)</b> Y LUEGO EL 2 Y VERIFICA QUE YA NO ESTE EL FALLO DE BATERIA</p>
+                         
+                        </div> 
+   
+                        <div class="form-check">
+                            <button type="button" class="btn btn-danger"onclick="mostrarAlertaYRedirigir1()">Finalizar</button>
+                        </div>
+                            <script>
+                                function mostrarAlertaYRedirigir1() {
+                         Swal.fire({
+                             title: "Recuerda tipificar en Siebel",
+                             text: "Gestion de actividades selecciona Consultas de tipo: SOPORTE/ASESORAMIENTO TECNICO",
+                             icon: "info",  // Cambia esto según el tipo de alerta que desees (info, success, warning, error, etc.)
+                             confirmButtonText: "Aceptar"
+                         }).then((result) => {
+                             if (result.isConfirmed) {
+                                var mensaje = "El cliente se comunica debido a un fallo en la batería de su dispositivo. Se le pregunta si está dispuesto a realizar la manipulación del dispositivo, ya que cuenta con las baterías necesarias. Posteriormente, se lleva a cabo el cambio de baterías correspondiente, lo que resulta en la solución del problema. ";
+                             window.location.href = "../Observaciones.html?mensaje=" + encodeURIComponent(mensaje);
+                             }
+                             
+                           
+                         });}
+                     </script>
+                     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                                                                                                                                         
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+            <br><br><br><br>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">NO</h5>
+                        <div class="paragraph-with-image">
+                        <img src="../imagenes/asesor.png" alt="">
+                        <p>-SE DEBE AGENDAR UNA VISITA TECNICA PARA SOLUCIONAR EL FALLO , RECUERDA QUE LA VISITA TECNICA TIENE UN COSTO DE $44.000 +IVA <br><br><B>RECUERDE LA TIPIFICACIÓN ES REPARACION + MANTENIMIENTO</B></p>
+                        </div> 
+                        <div class="form-check">
+                            
+                            <button type="button" class="btn btn-danger"onclick="mostrarAlertaYRedirigir()">Finalizar</button>
+                        </div>
+                            <script>
+                               function mostrarAlertaYRedirigir() {
+                        Swal.fire({
+                            title: "Recuerda tipificar en Siebel",
+                            text: "Gestion de actividades selecciona Actuacion Tecnica de tipo: REPARACION + MANTENIMIENTO",
+                            icon: "info",  // Cambia esto según el tipo de alerta que desees (info, success, warning, error, etc.)
+                            confirmButtonText: "Aceptar"
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                var mensaje = "El cliente se comunica debido a un fallo en la batería de su dispositivo. Se le pregunta si está dispuesto a realizar la manipulación del dispositivo, ya que tiene baja batería y es necesario realizar un cambio. Sin embargo, al proporcionarle la referencia de las pilas requeridas, el cliente informa que no las posee. Ante esta situación, el cliente acepta programar una visita técnica para resolver el problema.";
+                            window.location.href = "../Observaciones.html?mensaje=" + encodeURIComponent(mensaje);
+                            }
+                            
+                          
+                        });}
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Repite este bloque para más opciones -->
+        </div>
+        <section>
+            <details>
+                <summary>Destapado De Equipos</summary>
+                <section>
+                    <details>
+                        <summary>Teclado</summary>
+                        <p> </p>
+                        <div class="paragraph-with-image">
+                <img src="../imagenes/teclado.jpeg" alt="">
+                <p>-Poner el sistema en pruebas<br>Destapar el teclado, buscar las pestañas de la partes inferior, retirar tapa y cambiar pilas</p>
+            </div> 
+                    </details>
+                    <details>
+                        <summary>Sensores Infrarojo</summary>
+                        <div class="paragraph-with-image">
+                <img src="../imagenes/infrarojo.jpeg" alt="">
+                <p>Poner el sistema en pruebas<br>Destapar el Sensor, buscar la pestaña de la partes inferior y con ayuda de un perillero hacer palanca suavemente</p>
+            </div>               
+                    </details>
+                    <details>
+                        <summary>Magnetico Liviano</summary>
+                        <div class="paragraph-with-image">
+                <img src="../imagenes/liviano.jpeg" alt="">
+                <p>Poner el sistema en pruebas<br>Destapar solo el sensor(no es necesario retirar el magnetico), buscar la pestaña ubicada en la parte lateral y con ayuda de un perillero hacer palanca suavemente para destaparlo</p>
+            </div> 
+                        
+                    </details>
+                    <details>
+                        <summary>Magnetico Pesado</summary>
+                        <div class="paragraph-with-image">
+                <img src="../imagenes/pesado.jpeg" alt="">
+                <p>Poner el sistema en pruebas<br>Destapar solo el sensor(no es necesario retirar el magnetico), buscar la pestaña de la parte inferior y con ayuda de un perillero hacer palanca suavemente y retirar tapa, ahi se encontrara un tornillo, por ultimo desatornillar para destapar</p>
+            </div> 
+                        
+                    </details>
+                    <details>
+                        <summary>Humos</summary>
+                        <div class="paragraph-with-image">
+                <img src="../imagenes/humo.jpeg" alt="">
+                <p>Poner el sistema en pruebas<br>Destapar el humo, en la parte inferior tiene una tapa circular, gira la tapa en sentido contrario a las agujas del reloj y cambia las pilas AAA</p>
+            </div> 
+                        
+                    </details>
+                    <details>
+                        <summary>PG9984</summary>
+                        <div class="paragraph-with-image">
+                <img src="../imagenes/PG9984.png" alt="">
+                <p>Poner el sistema en pruebas<br>Destapar el sensor PG9984, buscar la pestaña de la parte inferior y con ayuda de un perillero hacer palanca suavemente y retirar tapa, ahi se encontrara un tornillo, por ultimo desatornillar para destapar</p>
+            </div> 
+                        
+                    </details>
+                </section>
+            </details>
+        </section>
+            <div class="centrar-imagen">
+<img src="../imagenes/bateria1.png"width="300px" height="250PX">  
+</div>
+</form>   
+    <!-- Incluye el script de Bootstrap (jQuery y Popper.js son requeridos) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+M6m5i5IQr5mW5u4xj5Hf5R5x/K/5fG5f5t5E5u5Q5z5U5w5T5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ugOaSJZ3ZcW5M5J5og4HQpev4F5tu6Bk/F5v5v5u5q2O5n5E5e5L5W5B5f5r5f5t5u5z5U5w5T5" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

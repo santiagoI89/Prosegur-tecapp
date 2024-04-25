@@ -1,0 +1,135 @@
+#videoContainer {
+    display: none;
+}
+.titulo{
+    color: #000000;
+
+}
+.fondos{
+    background-color: #FAC807;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+/* Estilo para el encabezado de la tarjeta */
+.color1{
+    background-color: #bba62d; /* Cambia el fondo a un tono de azul */
+    color: rgb(177, 158, 134); /* Cambia el color del texto a blanco */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px; /* Añade un poco de espacio alrededor del encabezado */
+    border: none; 
+}
+h1 {
+    text-align: center;
+}
+.PNeo{
+    color: #000000;
+    text-align: center;
+}
+.container1{
+    display: flex; /* Utilizamos flexbox para alinear elementos */
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilo para la imagen */
+.imagen {
+    width: 100px; /* Define el ancho de la imagen */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    text-align: left;
+}
+.card img {
+    width: 20%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+    height: 10%; /* Ajusta la altura automáticamente para mantener la proporción */
+    display: block; /* Evita espacios no deseados debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro de la tarjeta */
+}
+.btn-error {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco para resaltar */
+    padding: 10px 20px; /* Ajuste de relleno */
+    border: none; /* Sin borde */
+    cursor: pointer;
+}
+.centrar-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Ajusta la altura según tus necesidades */
+}
+.container2 {
+    text-align: center;
+    padding: 40px;
+    background-color: #FAC807;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    width: 75%;
+    height: 350px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #d0d32d; /* Cambia "#ff0000" al color que desees */
+    color: #000000; /* Cambia "#ffffff" al color de texto que desees */
+    border: none;
+    /* Otros estilos si los necesitas */
+}
+body {
+    height: 100%; /* Ajusta la altura del body al 100% */
+
+}
+.paragraph-with-image img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    max-width: 70%; /* La imagen no será más ancha que el párrafo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    width: 50px;
+}
+.paragraph-with-image {
+display: flex;
+align-items: center;
+height: 100%; /* Ajusta la altura al 100% para centrar verticalmente */
+justify-content: center;
+}
+.contenedor5 {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .imagen {
+    width: 13%; /* Tamaño de la imagen */
+  }
+  
+  .titulo {
+    flex-grow: 1; /* El título ocupará todo el espacio restante */
+    text-align: center; /* Centrar horizontalmente */
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Cormorant Garamond', serif;
+}
+p{
+    font-family: 'Cormorant Garamond', serif;
+}
+        /* Estilo personalizado para el botón */
+        .boton-personalizado {
+            background-color: #252713; /* Cambia el color de fondo a tu preferencia */
+            color: #fff; /* Cambia el color del texto a tu preferencia */
+            padding: 10px 10px; /* Añade relleno para dar espacio al contenido */
+            border: none; /* Quita el borde del botón si lo deseas */
+            border-radius: 5px; /* Añade bordes redondeados si lo deseas */
+            cursor: pointer; /* Cambia el cursor al puntero al pasar por encima */
+            height: 40px; /* Ajusta la altura del botón a tu preferencia */
+        }
+        .resaltado {
+            font-size: 30px; /* Tamaño de fuente deseado para la palabra resaltada */
+            vertical-align: middle;
+            /* Puedes agregar otros estilos CSS aquí, como color, negrita, etc. */
+        }
+

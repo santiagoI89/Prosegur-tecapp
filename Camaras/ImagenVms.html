@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosegur tecapp</title>
+    <link rel="stylesheet" href="../css/css.css?v1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script>
+        function redireccionar(valor) {
+            // Redirecciona a un formulario diferente basado en el valor del botón
+            if (valor === "1") {
+                window.location.href = "FalloMantenimiento.html"; // Reemplaza con la URL de tu primer formulario
+            } 
+            else if (valor === "2") {
+                window.location.href = "FalloEnergia0.html"; // Reemplaza con la URL de tu segundo formulario
+            } else if (valor === "3") {
+                window.location.href = "../FechaHora.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "4") {
+                window.location.href = "MedioComunicacion.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "5") {
+                window.location.href = "FalloZonaAbiertaDsc.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "6") {
+                window.location.href = "TrianguloEstaticoSabo1.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "7") {
+                window.location.href = "TrianguloParpadeo.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+            else if (valor === "8") {
+                window.location.href = "TrianguloParpadeo.html"; // Reemplaza con la URL de tu segundo formulario
+            } 
+        } 
+        function toggleNewCard() {
+            // Obtener el contenedor de la nueva tarjeta
+            var newCardContainer = document.getElementById("newCardContainer");
+
+            // Alternar la visibilidad de la nueva tarjeta
+            if (newCardContainer.style.display === "none") {
+                newCardContainer.style.display = "block";
+            } else {
+                newCardContainer.style.display = "none";
+            }
+        }
+        
+    </script>
+</head>
+
+<body class="fondos">
+ <div class="contenedor5">
+    <img id="miImagen" src="../imagenes/logo.png" alt="" width="180" height="60" class="imagen">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener la referencia a la imagen por su ID
+            var imagen = document.getElementById("miImagen");
+    
+            // Agregar un evento de click a la imagen
+            imagen.addEventListener("click", function() {
+                // Redirigir a otra vista cuando se haga clic en la imagen
+                window.location.href = "../paneles.html";            });
+        });
+    </script>  <h1 class="titulo">CAMARA VMS IMAGEN</h1>
+</div>
+ <div class="paragraph-with-image">
+       
+        
+    </div> 
+    
+ <p class="PNeo"><b></p></b>
+ <div class="paragraph-with-image">
+    <img src="../Imagenes/procedimiento.png" alt="">
+    <p> HACER LAS SIGUIENTES PREGUNTAS</p>    
+ </div>  
+ 
+ <form>
+<div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">ANCHO DE BANDA </h5>
+                        
+                        <div class="paragraph-with-image">
+                            <img src="../Imagenes/asesor.png" alt="">
+                            <p>¿SEÑOR/A XXXXXX ME PUEDE CONFIRMAR SI LA RED DE WIFI CUENTA CON UN ANCHO DE BANDA DE 2.4?</p>                     
+                        </div>
+                        <div class="paragraph-with-image">
+                            <img src="../Imagenes/procedimiento.png" alt="">
+                            <p>EN CASO DE NO CONTAR CON UN ANCHO DE BANDA DE 2.4 SELECCIONAR NO CUENTA CON 2.4, SI CUENTA CON 2.4 CONTINUAR CON LA SIGUIENTE PREGUNTA<br><br><b>SI NO CUENTA CON UN ANCHO DE 2.4 LO DEBE SOLUCIONAR EL CLIENTE CON SU PROVEEDOR DE INTERNET</b></p>                     
+                        </div>         
+                        <div class="form-check">
+                            <button type="button" class="btn btn-danger"onclick="mostrarAlertaYRedirigir()">NO CUENTA CON ANCHO DE BANDA DE 2.4</button>
+                        </div>
+                        
+                        <script>
+                            function mostrarAlertaYRedirigir() {
+                    Swal.fire({
+                        title: "Recuerda tipificar en Siebel",
+                        text: "Gestion de actividades selecciona Consultas de tipo: SOPORTE/ASESORAMIENTO TECNICO",
+                        icon: "info",  // Cambia esto según el tipo de alerta que desees (info, success, warning, error, etc.)
+                        confirmButtonText: "Aceptar"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            var mensaje = "El cliente llama para reportar fallo en a camara se hace verificacion remota y el cliente dice que no tiene un ancho de banda de 2.4 necesario para el funcionamiento de las camaras, se de da informacion que debe solucionar con el proveedor de internet";
+                        window.location.href = "../Observaciones.html?mensaje=" + encodeURIComponent(mensaje);
+                        }
+                        
+                      
+                    });}
+                    function mostrarAlertaYRedirigir1() {
+                    Swal.fire({
+                        title: "Recuerda tipificar en Siebel",
+                        text: "Gestion de actividades selecciona Asesoramiento Tecnico de tipo: REPARACION + MANTENIMIENTO",
+                        icon: "info",  // Cambia esto según el tipo de alerta que desees (info, success, warning, error, etc.)
+                        confirmButtonText: "Aceptar"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            var mensaje = "El cliente llama para reportar fallo en a camara se hace verificacion remota y el cliente dice que no tiene mas de 5gb por lo cual se le dice que tiene que hablar con el operador para que le aumenten las megas ya que sin mas de 5gb no podra tener acceso a los videos de las camaras";
+                        window.location.href = "../Observaciones.html?mensaje=" + encodeURIComponent(mensaje);
+                        }
+                        
+                      
+                    });}
+                    function mostrarAlertaYRedirigir2() {
+                    Swal.fire({
+                        title: "Recuerda tipificar en Siebel",
+                        text: "Gestion de actividades selecciona Asesoramiento Tecnico de tipo: REPARACION + MANTENIMIENTO",
+                        icon: "info",  // Cambia esto según el tipo de alerta que desees (info, success, warning, error, etc.)
+                        confirmButtonText: "Aceptar"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            var mensaje = "El cliente llama para reportar fallo en a camara se hace verificacion remota y el cliente dice que no tiene mas de 5gb por lo cual se le dice que tiene que hablar con el operador para que le aumenten las megas ya que sin mas de 5gb no podra tener acceso a los videos de las camaras";
+                        window.location.href = "../Observaciones.html?mensaje=" + encodeURIComponent(mensaje);
+                        }
+                        
+                      
+                    });}
+      
+    </script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3 ">
+                    <div class="card-body">
+                        <h5 class="card-title">CAMBIO CONTRASEÑA</h5>
+                        
+                        <div class="paragraph-with-image">
+                            <img src="../Imagenes/asesor.png" alt="">
+                            <p>¿SEÑOR/A XXXXX ME PUEDE CONFIRMAR SI SE CAMBIO LA CONTRASEÑA DE SU RED WIFI?</p>                     
+                        </div>    
+                        <div class="paragraph-with-image">
+                            <img src="../Imagenes/procedimiento.png" alt="">
+                            <p>EN CASO DE QUE HAYA CAMBIADO LA CONTRASEÑA SELECCIONE CAMBIO CONTRASEÑA , SI NO SE HIZO CAMBIO DE CONTRASEÑA DECIR LA SIGUIENTE PREGUNTA</p>                     
+                        </div>   
+<div class="form-check">
+                            <button type="button" class="btn btn-primary" onclick="redireccionar('4')">CAMBIO CONTRASEÑA</button>
+                        </div>                                                                                                   
+                        <div class="form-check">
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">FUENTE EN BUEN ESTADO</h5>
+                        
+                        <div class="paragraph-with-image">
+                        <img src="../Imagenes/asesor.png" alt="">
+                        <p>¿SEÑOR/A XXXXXX ME PUEDE CONFIRMAR SI LA FUENTE DE ALIMENTACION DE LA CAMARA ESTA EN BUEN ESTADO?</p>                     
+                    </div>   
+                        <div class="form-check">
+                            <button type="button" class="btn btn-danger"onclick="mostrarAlertaYRedirigir1()">BUEN ESTADO</button>
+                            <button type="button" class="btn btn-danger"onclick="mostrarAlertaYRedirigir2()">MAL ESTADO</button>
+                        </div>
+                        
+                        <div class="form-check">
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <button class="boton-personalizado" type="button" onclick="history.back();">Volver</button>
+
+            
+            
+            <!-- Repite este bloque para más opciones -->
+        </div>
+</div>
+</form>
+    
+    <!-- Incluye el script de Bootstrap (jQuery y Popper.js son requeridos) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+M6m5i5IQr5mW5u4xj5Hf5R5x/K/5fG5f5t5E5u5Q5z5U5w5T5" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ugOaSJZ3ZcW5M5J5og4HQpev4F5tu6Bk/F5v5v5u5q2O5n5E5e5L5W5B5f5r5f5t5u5z5U5w5T5" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>
